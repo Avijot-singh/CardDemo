@@ -11,9 +11,15 @@ namespace CardDemo
         private string rank; // This is a field, which gives the abiity to the card calss to store and share the information
         private string suit;
 
-        public Card() // Constructor is used to initalize the fields
+        public Card(string aRank, string aSuit) // Constructor is used to initalize the fields
         {
-        
+            rank = aRank;
+            suit = aSuit;
+        }
+
+        public void PrintDetails() // Method 
+        {
+            Console.WriteLine("{0} {1}", rank, suit);
         }
 
     }
